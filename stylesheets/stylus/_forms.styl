@@ -1,0 +1,68 @@
+/*
+* Form
+**/
+.form-group
+	position relative
+	font-size 16px
+	line-height 24px
+
+	& + .form-group
+		margin-top 15px
+	
+.form-label
+	position relative
+	display block
+	
+	font-size inherit
+	line-height inherit
+	
+.form-input
+	display block
+	padding 8px 5px
+	width 100%
+	
+	border none
+	border-bottom 1px solid
+	
+	font-size inherit
+	line-height inherit
+	color #777
+	
+	&:focus
+		color primary_blue
+
+/*
+* Buttons
+**/
+.btn
+	display inline-block
+	padding 8px
+	
+	font-weight bold
+	text-transform uppercase
+	
+.btn--save
+	color #FFF
+	background-color primary_blue
+	
+	border 1px solid primary_blue
+	border-radius 2px
+
+	transition color, background-color 0.2s linear
+	
+	&:active, &:focus
+		background-color primary_blue_hover
+		border-color primary_blue_hover
+		
+.btn--icon
+	height 42px
+	line-height 24px
+	
+	fill #777
+	border-radius 100%
+	
+	&:hover
+		background-color #F0F0F0
+
+a.btn
+	text-decoration none
