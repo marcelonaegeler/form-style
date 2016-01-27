@@ -8,6 +8,22 @@
 
 	& + .form-group
 		margin-top 15px
+
+.form-group--inline
+	.form-label
+		display inline-block
+		margin-right 5px
+
+	.form-input
+		width auto
+		display inline-block
+
+.form-combo
+	.form-input
+		width auto
+		display inline-block
+	
+	
 	
 .form-label
 	position relative
@@ -37,11 +53,15 @@
 .btn
 	display inline-block
 	padding 8px
+	cursor pointer
 	
 	font-weight bold
 	text-transform uppercase
-	
-.btn--save
+
+.btn:disabled
+	cursor not-allowed
+
+.btn--default
 	color #FFF
 	background-color primary_blue
 	
@@ -53,7 +73,11 @@
 	&:active, &:focus
 		background-color primary_blue_hover
 		border-color primary_blue_hover
-		
+
+	&:disabled
+		background-color primary_blue_disabled
+		border 1px solid primary_blue_disabled
+
 .btn--icon
 	height 42px
 	line-height 24px

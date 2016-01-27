@@ -32,7 +32,7 @@
 		<div class="content-body">
 			<form action="">
 					
-				<div class="form-group">
+				<div class="form-group form-group--inline">
 					<label for="name" class="form-label">Name</label>
 					<input type="text" id="name" name="name" class="form-input" placeholder="Name">
 				</div>
@@ -43,7 +43,16 @@
 				</div>
 
 				<div class="form-group">
-					<button class="btn btn--save">Save</button>
+					<label for="address" class="form-label">Input and button combo</label>
+					<div class="form-combo">
+						<input type="text" id="address" name="address" class="form-input" placeholder="Address">
+						<button class="btn btn--default">Find</button>
+					</div>
+				</div>
+
+				<div class="form-group">
+					<button class="btn btn--default">Save</button>
+					<button class="btn btn--default" disabled>Disabled</button>
 				</div>
 
 			</form>
